@@ -1,5 +1,17 @@
 # mAP (mean Average Precision)
 
+Modified mAP precision to take into account darknet yolo format as opposed to the original format:
+
+    <object-class> <x_center> <y_center> <width> <height>
+     (ex.: 1 0.716797 0.395833 0.216406 0.147222)
+    instead of 
+    
+    <class_name> <left> <top> <right> <bottom> [<difficult>]
+     (ex.: book 439 157 556 241)
+
+
+# mAP (mean Average Precision)
+
 [![GitHub stars](https://img.shields.io/github/stars/Cartucho/mAP.svg?style=social&label=Stars)](https://github.com/Cartucho/mAP)
 
 This code will evaluate the performance of your neural net for object recognition.
